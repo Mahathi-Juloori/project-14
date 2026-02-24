@@ -1,5 +1,4 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-//fake data call from API 
 export const fetchMenu = createAsyncThunk("menu/fetchMenu", async () => {
     return new Promise((resolve) => {
         setTimeout(() => {
@@ -43,4 +42,5 @@ const menuSlice = createSlice({
 });
 
 export const {setFilter}=menuSlice.actions;
+
 export default menuSlice.reducer
